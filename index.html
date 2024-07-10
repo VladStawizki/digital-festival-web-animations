@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/general.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Small Cat</title>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+
+      ::view-transition-old(body) {
+        animation-name: shrink;
+      }
+
+      ::view-transition-new(body) {
+        animation-name: grow;
+        animation-delay: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <section class="section">
+        <div class="container pending">
+          <a href="/detail.html">
+            <img
+              src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?q=80&w=640&auto=format&fit=crop"
+              class="img"
+              width="640"
+              alt="Cat"
+              onload="setTimeout(()=> {document.querySelector('.container').classList.remove('pending')}, 1000) "
+            />
+          </a>
+        </div>
+        <div class="description">
+          <h2>Miau</h2>
+          <p>When I want in, I want in now!</p>
+          <p><i>- Garfield</i></p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container-b pending">
+          <img
+            src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?q=80&w=640&auto=format&fit=crop"
+            class="img"
+            width="320"
+            alt="Cat"
+            onload="setTimeout(()=> {document.querySelector('.container-b').classList.remove('pending')}, 5000) "
+          />
+        </div>
+        <div class="description">
+          <h2>Miau</h2>
+          <p>When I want in, I want in now!</p>
+          <p><i>- Garfield</i></p>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  width: 720px;
+  background-color: lightgrey;
+}
+
+.container svg {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.container.pending > img {
+  opacity: 0;
+}
+
+.container > img {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.description {
+  padding: 0 24px;
+}
+
+::view-transition-old(body) {
+  animation-name: shrink;
+}
+
+::view-transition-new(body) {
+  animation-name: grow;
+  animation-delay: 0.3s;
+}
+
+.section {
+  padding: 12px 0;
+}

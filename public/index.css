@@ -1,0 +1,42 @@
+.container {
+  width: 320px;
+  background-color: lightgrey;
+}
+
+.container.pending img {
+  opacity: 0;
+}
+
+.container img {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.container-b {
+  width: 640px;
+  background-color: #ececec;
+  animation: pending 700ms ease 10;
+}
+
+.container-b.pending > img {
+  opacity: 0;
+}
+
+.container-b > img {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.description {
+  padding: 0 24px;
+}
+/* 
+::view-transition-old(image) {
+  animation-name: shrink;
+} */
+/* 
+::view-transition-new(image) {
+  animation-name: grow;
+  animation-delay: 0.3s;
+} */

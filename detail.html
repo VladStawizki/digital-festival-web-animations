@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/general.css" />
+    <link rel="stylesheet" href="/detail.css" />
+    <title>Big Cat</title>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <section class="section">
+        <div class="container pending">
+          <a href="/">
+            <img
+              src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?q=80&w=1280&auto=format&fit=crop"
+              class="img"
+              width="720"
+              alt="Cat"
+              onload="setTimeout(()=> {document.querySelector('.container').classList.remove('pending')}, 1000) "
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <polygon
+                points="20 0 10.708 9.292 1.414 0 0 1.414 9.294 10.706 0 20 1.414 21.414 10.708 12.12 20 21.414 21.414 20 12.121 10.706 21.414 1.414"
+                transform="translate(5.3 5.3)"
+              ></polygon>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

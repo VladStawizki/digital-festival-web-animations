@@ -1,0 +1,15 @@
+{
+  "name": "digital-festival-web-animations",
+  "author": {
+    "name": "Vlad Stawizki <vlad.stawizki@gmail.com>"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.3.1"
+  }
+}
